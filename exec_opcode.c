@@ -29,7 +29,7 @@ int run(char *content, stack_t **head, unsigned int nbLine, FILE *file)
 	while (op_stk[i].opcode && op)
 	{
 		if (strcmp(op, op_stk[i].opcode) == 0)
-		{ op_stk[i].f(stack, nbLine);
+		{ op_stk[i].f(head, nbLine);
 			return (0);
 		}
 		i++; }
